@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Authentique pizzeria italienne servant des pizzas traditionnelles cuites au feu de bois">
+    <meta name="keywords" content="pizza, italien, restaurant, pizzeria">
+    <meta name="author" content="Pizzeria">
+    <title>Pizzeria Italienne Authentique - Livraison de Pizzas Fraîches</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">🍕 Pizzeria</div>
+                <ul class="nav-menu">
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">À Propos</a></li>
+                    <li><a href="#hours" class="nav-link">Horaires</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link">🇬🇧 EN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Pizzeria Italienne Authentique</h1>
+            <p class="hero-tagline">Des pizzas faites à la main avec amour et tradition</p>
+            <div class="hero-cta">
+                <a href="tel:+33616171148" class="btn btn-primary">
+                    📞 Commandez: (123) 456-7890
+                </a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Notre Menu</h2>
+            <p class="section-subtitle">Des plats délicieux confectionnés avec les meilleurs ingrédients</p>
+            
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="menu-tab-btn active" data-tab="pizzas">🍕 Pizzas</button>
+                <button class="menu-tab-btn" data-tab="antipasti">🥗 Antipasti</button>
+                <button class="menu-tab-btn" data-tab="drinks">🍷 Boissons</button>
+            </div>
+
+            <!-- Pizzas Tab -->
+            <div id="pizzas" class="menu-tab-content active">
+                <div class="menu-grid">
+                    <!-- Margherita Pizza -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/E63946/FFFFFF?text=Margherita" alt="Margherita" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Margherita</h3>
+                            <span class="menu-price">14,99 €</span>
+                        </div>
+                        <p class="menu-description">Mozzarella fraîche, basilic, sauce tomate et huile d'olive sur notre pâte exclusive</p>
+                        <button class="btn-add" data-pizza="Margherita">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Pepperoni Pizza -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/E63946/FFFFFF?text=Pepperoni" alt="Pepperoni" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Pepperoni</h3>
+                            <span class="menu-price">16,99 €</span>
+                        </div>
+                        <p class="menu-description">Généreuses portions de pepperoni croustillant et fromage mozzarella fondu</p>
+                        <button class="btn-add" data-pizza="Pepperoni">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- 4 Cheese Pizza -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/E63946/FFFFFF?text=Quattro+Formaggi" alt="Quattro Formaggi" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Quattro Formaggi</h3>
+                            <span class="menu-price">17,99 €</span>
+                        </div>
+                        <p class="menu-description">Un mélange de mozzarella, parmesan, gorgonzola et ricotta</p>
+                        <button class="btn-add" data-pizza="Quattro Formaggi">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Vegetarian Pizza -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/2D6A4F/FFFFFF?text=Vegetariana" alt="Vegetariana" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Végétarienne</h3>
+                            <span class="menu-price">15,99 €</span>
+                        </div>
+                        <p class="menu-description">Légumes rôtis, basilic frais, épinards, champignons et mozzarella</p>
+                        <button class="btn-add" data-pizza="Vegetariana">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Carnivore Pizza -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/E63946/FFFFFF?text=Carnivore" alt="Carnivore" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Carnivore</h3>
+                            <span class="menu-price">18,99 €</span>
+                        </div>
+                        <p class="menu-description">Pepperoni, saucisse, bacon et jambon sur un lit de mozzarella fondue</p>
+                        <button class="btn-add" data-pizza="Carnivore">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Bianca Pizza -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/FFF8F3/E63946?text=Bianca" alt="Bianca" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Bianca</h3>
+                            <span class="menu-price">16,99 €</span>
+                        </div>
+                        <p class="menu-description">Ricotta, mozzarella, ail, herbes et filet d'huile d'olive premium</p>
+                        <button class="btn-add" data-pizza="Bianca">Ajouter à la commande</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Antipasti Tab -->
+            <div id="antipasti" class="menu-tab-content">
+                <div class="menu-grid">
+                    <!-- Bruschetta -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/FFF8F3/E63946?text=Bruschetta" alt="Bruschetta" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Bruschetta</h3>
+                            <span class="menu-price">8,99 €</span>
+                        </div>
+                        <p class="menu-description">Pain grillé avec tomates, ail, basilic et huile d'olive vierge</p>
+                        <button class="btn-add" data-item="Bruschetta">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Calamari Fritti -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/E63946/FFFFFF?text=Calamari+Fritti" alt="Calamari Fritti" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Calamari Fritti</h3>
+                            <span class="menu-price">12,99 €</span>
+                        </div>
+                        <p class="menu-description">Encornet tendre, légèrement frit et servi avec sauce marinara</p>
+                        <button class="btn-add" data-item="Calamari Fritti">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Mozzarella Sticks -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/FFF8F3/2D6A4F?text=Mozzarella+Sticks" alt="Mozzarella Sticks" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Bâtonnets de Mozzarella</h3>
+                            <span class="menu-price">9,99 €</span>
+                        </div>
+                        <p class="menu-description">Mozzarella dorée et frite served avec sauce marinara</p>
+                        <button class="btn-add" data-item="Mozzarella Sticks">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Arancini -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/E63946/FFFFFF?text=Arancini" alt="Arancini" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Arancini</h3>
+                            <span class="menu-price">10,99 €</span>
+                        </div>
+                        <p class="menu-description">Boules de riz siciliennes remplies de ragù, petit pois et mozzarella</p>
+                        <button class="btn-add" data-item="Arancini">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Caprese Salad -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/2D6A4F/FFFFFF?text=Caprese+Salad" alt="Caprese Salad" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Salade Caprese</h3>
+                            <span class="menu-price">11,99 €</span>
+                        </div>
+                        <p class="menu-description">Tomates fraîches, mozzarella, basilic et réduction balsamique</p>
+                        <button class="btn-add" data-item="Caprese Salad">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Garlic Bread -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/FFF8F3/E63946?text=Garlic+Bread" alt="Garlic Bread" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Pain à l'Ail</h3>
+                            <span class="menu-price">6,99 €</span>
+                        </div>
+                        <p class="menu-description">Pain croustillant garni de beurre à l'ail et persil frais</p>
+                        <button class="btn-add" data-item="Garlic Bread">Ajouter à la commande</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks Tab -->
+            <div id="drinks" class="menu-tab-content">
+                <div class="menu-grid">
+                    <!-- Espresso -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/8B4513/FFFFFF?text=Espresso" alt="Espresso" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Espresso</h3>
+                            <span class="menu-price">3,50 €</span>
+                        </div>
+                        <p class="menu-description">Classique espresso italien, fort et savoureux</p>
+                        <button class="btn-add" data-item="Espresso">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Cappuccino -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/D2B48C/FFFFFF?text=Cappuccino" alt="Cappuccino" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Cappuccino</h3>
+                            <span class="menu-price">4,50 €</span>
+                        </div>
+                        <p class="menu-description">Espresso avec lait vapeur et riche mousse</p>
+                        <button class="btn-add" data-item="Cappuccino">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Pasta Fresca -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/FFF8F3/E63946?text=Pasta+Fresca" alt="Fresh Juice" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Jus Frais</h3>
+                            <span class="menu-price">5,00 €</span>
+                        </div>
+                        <p class="menu-description">Mélange frais d'orange et jus de citron</p>
+                        <button class="btn-add" data-item="Pasta Fresca">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Italian Red Wine -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/722F37/FFFFFF?text=Red+Wine" alt="Red Wine" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Vin Rouge Italien</h3>
+                            <span class="menu-price">8,50 €</span>
+                        </div>
+                        <p class="menu-description">Sélection premium de Barolos et Chiantis italiens</p>
+                        <button class="btn-add" data-item="Red Wine">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- Italian White Wine -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/F4D03F/FFFFFF?text=White+Wine" alt="White Wine" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">Vin Blanc Italien</h3>
+                            <span class="menu-price">7,50 €</span>
+                        </div>
+                        <p class="menu-description">Blancs croustillants du Pinot Grigio au Vermentino</p>
+                        <button class="btn-add" data-item="White Wine">Ajouter à la commande</button>
+                    </div>
+
+                    <!-- San Pellegrino -->
+                    <div class="menu-card">
+                        <img src="https://via.placeholder.com/300x250/87CEEB/FFFFFF?text=San+Pellegrino" alt="San Pellegrino" class="menu-card-image">
+                        <div class="menu-card-header">
+                            <h3 class="menu-title">San Pellegrino</h3>
+                            <span class="menu-price">3,00 €</span>
+                        </div>
+                        <p class="menu-description">Eau minérale italienne pétillante, saveurs variées</p>
+                        <button class="btn-add" data-item="San Pellegrino">Ajouter à la commande</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">À Propos de Notre Pizzeria</h2>
+                    <p>
+                        Bienvenue dans notre pizzeria italienne familiale. Depuis plus de 20 ans, nous sommes les meilleurs pour apporter des saveurs italiennes authentiques à notre communauté. Notre passion est simple : créer la pizza parfaite en utilisant des méthodes traditionnelles et les meilleurs ingrédients importés.
+                    </p>
+                    <p>
+                        Chaque pizza est confectionnée à la main avec amour par nos maîtres pizzaiolos, formés au cœur de Naples. Nous croyons que la bonne pizza n'est pas que de la nourriture—c'est une célébration de la tradition, de la famille et de la qualité. C'est pourquoi nous ne faisons jamais de compromis sur les ingrédients et utilisons toujours 100% de produits naturels et biologiques.
+                    </p>
+                    <p>
+                        Merci de nous avoir choisis. Nous avons hâte de partager une part d'Italie avec vous !
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="feature-icon">🌱</span>
+                        <h3>Ingrédients Frais</h3>
+                        <p>100% biologique et provenance locale</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🔥</span>
+                        <h3>Recette Traditionnelle</h3>
+                        <p>Préparation italienne authentique</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">👨‍🍳</span>
+                        <h3>Chefs Experts</h3>
+                        <p>Pizzaiolos formés à Naples</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section id="hours" class="hours-section">
+        <div class="container">
+            <h2 class="section-title">Horaires d'Ouverture</h2>
+            <div class="hours-table-wrapper">
+                <table class="hours-table">
+                    <thead>
+                        <tr>
+                            <th>Jour</th>
+                            <th>Horaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>11:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>11:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>11:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>11:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>11:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>12:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>12:00 - 22:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Nous Trouver</h2>
+            <div class="location-content">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95592!3d-37.80787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11e59d%3A0xf0100b6f7c0b0!2sItalie!5e0!3m2!1sfr!2sfr!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="location-info">
+                    <h3>Notre Adresse</h3>
+                    <p>123 Rue Italienne<br>New York, NY 10001</p>
+                    <h3>Contact</h3>
+                    <p>
+                        <strong>Téléphone:</strong> <a href="tel:+33616171148">(123) 456-7890</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:info@pizzeria.com">info@pizzeria.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Nous Contacter</h2>
+            <p class="section-subtitle">Vous avez une question ? Nous aimerions vous entendre</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Votre Nom"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Votre Email"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Votre Téléphone (optionnel)"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Votre Message"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                <p class="form-note" id="formNote"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pizzeria Italienne Authentique. Tous droits réservés.</p>
+            <p>Fait avec 🍕 et ❤️</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
